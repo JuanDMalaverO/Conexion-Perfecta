@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #121212 !important;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    margin: 20px 30px 0px 30px;
+    padding: 0;
+    height: 10vh;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.calculate {
+    width: 100%;
+    height: 90vh;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+}
+
+.navegation .logo {
+    flex: 0.2;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navegation .info {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation .info .in {
+    margin: 0px 30px 0px 30px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.navegation .info .in3 {
+    background-color: #209cf4;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0px 15px 0px 15px !important;
+}
+
+.navegation .social {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegation .social a {
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+/* Main Layout */
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.menulateral {
+    flex: 1 1 250px;
+    max-width: 250px;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.menulateral .informacionusu {
+    margin-bottom: 40px;
+}
+
+.menulateral .informacionusu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #dfdfdf;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menulateral .informacionusu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menulateral .infoxi {
+    text-align: center;
+}
+
+.menulateral .logout {
+    background-color: #f04434;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Content Area */
+.contenidousu {
+    flex: 1;
+    padding: 30px 30px 30px 30px;
+    background-color: #1a1a1a;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.contenidousu .imgusu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenidousu .fotoprin2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contenidousu .personac {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contenidousu .infox2 {
+    font-size: 18px;
+    color: #bbbbbb;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+/* Citas Recientes */
+.citasrec {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.citasrec h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.citasrec p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.citasrec .cita {
+    background-color: #333333;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.estado-activo { color: #75b798; }
+.estado-pendiente { color: #ffda6a; }
+.estado-cancelada { color: #ea868f; }
+.estado-finalizada { color: #383c44; }
+
+.estado-punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ordforacc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infcpac {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.fa-user {
+    color: #fff !important;
+}
+
+.personac {
+    color: #fff;
+}
+
+.citsrec {
+    color: #fff;
+}
+
+.menulateral2 {
+    display: none;
+}
+
+.pagcitpbe {
+    color: #fff;
+    background-color: #209cf4;
+    border-radius: 5px;
+    padding: 7px 17px 7px 17px;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+    
+    .contenidousu {
+        margin-left: 0;
+    }
+
+    .navegation .info {
+        display: none;
+    }
+
+    .navegation .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navegation .social {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .menulateral {
+        display: none;
+    }
+    .menulateral2 {
+        display: block;
+        flex: 1;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .informacionusu2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    .informacionusu2 a {
+        flex: 1;
+        text-align: center;
+    }
+
+    .cos {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .redcos17 {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .infoxi2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #f04434 !important;
+        text-decoration: none;
+    }
+
+    .infoxi2 .logout {
+        color: #f04434 !important;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .navegation .logo {
+        font-size: 20px;
+    }
+
+    .contenidousu .personac {
+        font-size: 20px;
+    }
+
+    .contenidousu .fotoprin2 {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+}

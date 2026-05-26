@@ -1,0 +1,23 @@
+# ── Dependencias ──────────────────────────────────────────
+Conection/vendor/
+Conection_admin/node_modules/
+
+# ── Configuración con credenciales (usar *.example.php como plantilla) ──
+Conection/config.php
+Conection_admin/config.php
+
+# ── Sistema operativo ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs y temporales ─────────────────────────────────────
+*.log
+*.tmp
+*.cache
+
+# ── Editores ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

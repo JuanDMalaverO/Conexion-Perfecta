@@ -1,0 +1,74 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.schedule {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.schedule h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.schedule table, .schedule th, .schedule td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.schedule th {
+    background-color: #209cf4;
+    color: white;
+}
+
+.schedule td {
+    background-color: #f9f9f9;
+}
+
+.note {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.note p {
+    font-size: 18px;
+    color: #666;
+}
+
+.note i {
+    color: #209cf4;
+    margin-right: 10px;
+}

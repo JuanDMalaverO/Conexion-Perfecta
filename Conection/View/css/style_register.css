@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: #121212 !important;
+}
+
+.header {
+    margin: 20px 30px 20px 30px;
+    padding: 0;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+}
+
+.navegation .logo {
+    flex: 0.2;
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navegation .info {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation .info .in {
+    margin: 0px 30px 0px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegation .info .in3 {
+    background-color: #209cf4;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0px 15px 0px 15px !important;
+}
+
+.navegation .social {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegation .social a {
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+/* Pagina */
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seccion1 {
+    background-color: red;
+    height: 92vh;
+    flex: 0.275;
+}
+
+.seccion2 {
+    background-color: blue;
+    height: 92vh;
+    flex: 0.45;
+}
+
+.seccion3 {
+    background-color: green;
+    height: 92vh;
+    flex: 0.275;
+}
+
+.princip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 540px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s, height .2s ease;
+    background-color: #1a1a1a1a;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 620px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -7px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.8em;
+    color: #fff;
+    line-height: 60px;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 1s;
+}
+.modal-content2 {
+    background-color: #051b11 !important;
+    margin: 7% auto !important;
+    padding: 20px !important;
+    border: 1px solid #0f5132 !important;
+    border-radius: 7px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #75b798; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal2.fade-in {
+    display: block;
+    opacity: 1;
+}
+.modal2.fade-out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.ingat {
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingat label input {
+    accent-color: rgb(93, 173, 226);
+    margin-right: 3px;
+}
+
+.ingat a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ingat a:hover {
+    text-decoration: underline;
+}
+
+.btnxd {
+    width: 100%;
+    height: 45px;
+    background-color:  #209cf4 !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btnxd:hover {
+    background-color: rgb(169, 50, 38);
+    color: #fff;
+}
+
+.login-register {
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color:  #209cf4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff4c4c !important;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1168px) {
+    .navegation .info {
+        display: none;
+    }
+    .navegation .vacio {
+        flex: 0.2;
+    }
+    .navegation .logo {
+        flex: 0.6;
+        text-align: center;
+    }
+    .navegation .social {
+        flex: 0.2;
+    }
+    .header {
+        margin-top: 20px;
+    }
+    .logo2 .part1 {
+        font-size: 140px;
+    }
+    .logo2 .part2 {
+        font-size: 140px;
+    }
+    .contenido p {
+        font-size: 17.8px;
+    }
+    .contenido .btnprin {
+        font-size: 17.9px;
+        padding: 12px 22px 12px 22px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #100c14 !important;
+    }
+    .logo2 .part1 {
+        font-size: 110px;
+    }
+    .logo2 .part2 {
+        font-size: 110px;
+    }
+    .contenido p {
+        font-size: 15.8px;
+    }
+    .contenido .btnprin {
+        font-size: 15.9px;
+        padding: 9px 17px 9px 17px;
+    }
+    #video-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .navegation .logo {
+        font-size: 20px;
+    }
+    .navegation .social a {
+        font-size: 20px;
+    }
+    .logo2 .part1 {
+        font-size: 90px;
+    }
+    .logo2 .part2 {
+        font-size: 90px;
+    }
+    .contenido p {
+        font-size: 13.4px;
+    }
+    .contenido .btnprin {
+        font-size: 13.4px;
+        padding: 7px 16px 7px 16px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .navegation .logo {
+        font-size: 20px;
+    }
+    .navegation .social a {
+        font-size: 20px;
+    }
+    .logo2 .part1 {
+        font-size: 70px;
+    }
+    .logo2 .part2 {
+        font-size: 70px;
+    }
+    .contenido p {
+        font-size: 13px;
+    }
+    .contenido .btnprin {
+        font-size: 13px;
+        padding: 10px 20px 10px 20px;
+    }
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f8;
+}
+
+.header {
+    padding: 20px 30px 20px 30px;
+    color: #fff;
+    background-color: #16181d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.calculate {
+    width: 100%;
+    height: 90vh;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+}
+
+.navegation .logo {
+    flex: 0.2;
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navegation .info {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation .info .in {
+    margin: 0px 30px 0px 30px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.navegation .info .in3 {
+    background-color: #209cf4;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0px 15px 0px 15px !important;
+}
+
+.navegation .social {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegation .social a {
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.boton-mi-cuenta {
+    display: inline-block; 
+    padding: 7px 14px; 
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid white; 
+    color: white; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    font-size: 14px !important;
+    border-radius: 50px;
+}
+  
+.boton-mi-cuenta:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fa-user {
+    padding-right: 10px !important;
+}
+
+.contnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7f8;
+}
+
+.nostr {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+.textcon {
+    padding: 50px;
+    text-align: left;
+}
+
+.textcon h2 {
+    padding: 0 0 40px 0;
+}
+
+
+.bg-body-tertiary {
+    background-color: #201c1c !important;
+}
+
+footer {
+    background-color: #100c14;
+}
+
+.fondito {
+    background-color: rgb(37, 37, 37) !important;
+}
+
+
+.textito {
+    color: #bebebe;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.map-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.info2 {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info2 h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.info2 p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.info2 i {
+    color: #209cf4;
+    margin-right: 10px;
+}
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #333;
+    font-weight: bold;
+}
+
+.bg-body-tertiary {
+    background-color: #201c1c !important;
+}
+
+footer {
+    background-color: #100c14;
+}
+
+.fondito {
+    background-color: rgb(37, 37, 37) !important;
+}
+
+
+.textito {
+    color: #bebebe;
+}
+@media (max-width: 768px) {
+    .info h2 {
+        font-size: 24px;
+    }
+    .info p {
+        font-size: 16px;
+    }
+}

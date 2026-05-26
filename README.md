@@ -187,7 +187,7 @@ Conexion-Perfecta/
 ## Autor
 
 **Juan David Malaver**  
-[GitHub](https://github.com/JuanDMalaverO) · [Instagram](https://www.instagram.com/juan.no.15/)
+[GitHub](https://github.com/JuanDMalaverO) · [Instagram](https://www.instagram.com/juan._malaver/)
 
 ---
 
